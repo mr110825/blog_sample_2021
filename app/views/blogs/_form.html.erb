@@ -21,6 +21,11 @@
     <%= form.text_area :content %>
   </div>
 
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.select :state, Blog.states.keys.to_a, {} %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
